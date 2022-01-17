@@ -1,0 +1,8 @@
+services:
+  jupyter:
+    image: jupyter/all-spark-notebook:latest
+    ports:
+      - 8888:8888
+    volumes:
+      - /home/danaes/github/daglearning:/home/jovyan/work
+    restart: always
